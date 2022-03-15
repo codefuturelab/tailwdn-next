@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import BlockCard from '../components/BlockCard'
 import styles from '../styles/Home.module.css'
-
+// create a component return image with get image url from props
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -12,44 +13,25 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+      <div className="grid grid-cols-3 divide-x h-screen">
+        <div className="bg-sky-500/75 items-center justify-center flex flex-col">
+        <BlockCard image="https://images.edrawsoft.com/images2020/instances.jpg" text="sdadfsjdhbfjshdbfl "/>
+            </div>
+        <div className="bg-red-200 items-center justify-center flex flex-col">       
+        <BlockCard image="https://images.edrawsoft.com/images2020/icon/aws-lambda.jpg" text="bişiyler falan işte ddfnjsdf "/>
+        <BlockCard image="https://images.edrawsoft.com/images2020/icon/aws-lambda.jpg" text="bişiyler falan işte df"/>
+        <BlockCard image="https://images.edrawsoft.com/images2020/icon/aws-lambda.jpg" text="bişiyler falan işte df"/>
+        <BlockCard image="https://images.edrawsoft.com/images2020/icon/aws-lambda.jpg" text="bişiyler falan işte df"/>
+            </div>
+        <div className="bg-teal-900	items-center justify-center flex flex-col ">
+        <BlockCard image="https://images.edrawsoft.com/images2020/instance.jpg" text="bişiyler falan işte df"/>
+        <BlockCard image="https://images.edrawsoft.com/images2020/instance.jpg"  text="bişiyler falan iştedf "/>
+        <BlockCard image="https://images.edrawsoft.com/images2020/instance.jpg " text="bişiyler falan işte df "/>
+        <BlockCard image="https://images.edrawsoft.com/images2020/instance.jpg" text="bişiyler falan işte  sdgdsfgdfg  "/>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+          
+          </div>
+      </div>
       </main>
 
       <footer className={styles.footer}>
